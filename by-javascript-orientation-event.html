@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>orientationchange demo by JavaScript</title>
+  <meta name="description" content="By JavaScript we can detect orientation of mobile application that it is in landscape or portrait mode. window object has orientation property so we can get this property by window.orientation"/>
+<meta name="keywords" content="detect window orientation event ,detect Orientation change, jQuery Mobile Orientation Event,portrait ,landscape ,portrait mode ,landscape mode,detect iOS device orientation,Orientation Change demo"/>
+<meta property="og:image" content="http://tech-blog.maddyzone.com/wp-content/uploads/2014/08/Detect-Orientation-Event.png" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@maddyzonenews"/>
+<meta name="twitter:domain" content="Maddyzone Tech Blog"/>
+<meta name="twitter:creator" content="@maddyzonenews"/>
+<meta name="twitter:image:src" content="http://tech-blog.maddyzone.com/wp-content/uploads/2014/08/Detect-Orientation-Event.png"/>
+<meta itemprop="name" content="Detect Orientation Event">
+<meta itemprop="description" content="By JavaScript we can detect orientation of mobile application that it is in landscape or portrait mode. window object has orientation property so we can get this property by window.orientation">
+<meta itemprop="image" content="http://tech-blog.maddyzone.com/wp-content/uploads/2014/08/Detect-Orientation-Event.png">
+<link rel="author" href="https://plus.google.com/+RITURAJRATAN/posts"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css" />
+ 
+</head>
+<body>
+ 
+ <div class="container">
+	<div class="jumbotron">
+     <img  src="images/maddyzone-logo-300x72.png" >
+     <br/>
+		<h1>orientationchange demo by JavaScript</h1>
+		<br/>
+		<h2><a href="http://demo.maddyzone.com/javascript/detect-orientation-event/" title="orientationchange">Back </a></h2>
+		
+    </div>
+    </div>
+ 
+<script>
+// Bind an event to window.orientationchange that, when the device is turned,
+// gets the orientation and displays it to on screen.
+function getDeviceOrientation() {
+                         
+    if (Math.abs(window.orientation) === 90) {
+        // Landscape Mode
+       alert("Landscape");
+    } else {
+
+        // Portrait Mode
+        alert("Portrait");
+
+    }
+}
+// event on orientation change
+ window.onorientationchange = getDeviceOrientation;
+// You can also manually force this event to fire.
+getDeviceOrientation();
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44786250-1', 'auto');
+  ga('send', 'pageview');
+</script>
+ 
+</body>
+</html>
